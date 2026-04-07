@@ -1,6 +1,6 @@
 import { SectionWrapper, SectionTitle } from "./SectionWrapper";
 import { Code, Globe, Smartphone, Wrench, Server, Users } from "lucide-react";
-
+import profile from "../assets/profile.jpg";
 const categories = [
   {
     title: "Programming Languages",
