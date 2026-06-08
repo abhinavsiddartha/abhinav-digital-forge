@@ -8,12 +8,12 @@ const experiences = [
     description:
       "Designed and developed a secure web portal for HR and employee workflow management, improving digital process efficiency.",
   },
-  {
-    role: "Upcoming Intern (2026) – NutriVision AI",
-    company: "ICMR – National Institute of Nutrition (NIN)",
-    description:
-      "Selected for an upcoming research internship focused on AI-driven nutrition intelligence.",
-  },
+{
+  role: "AI Research Intern – NutriVision AI",
+  company: "ICMR – National Institute of Nutrition (NIN)",
+  description:
+    "Developing NutriVision AI, an intelligent nutrition platform focused on food analysis, nutrition monitoring, dietary assessment, and health tracking to support data-driven wellness insights.",
+},
 ];
 
 const Experience = () => (
