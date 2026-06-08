@@ -4,7 +4,7 @@ const projects = [
   { title: "ReServe", desc: "Cross-platform app connecting hotels and NGOs for efficient food redistribution with real-time tracking and optimized logistics.", tags: ["Flutter", "Dart", "Firebase", "Google Maps API"] },
   { title: "AttendEase", desc: "AI-powered attendance system using real-time face recognition with admin dashboard and exportable reports.", tags: ["React.js", "Flask", "Python", "SQLite"] },
   { title: "DNA/RNA Sequencer", desc: "Bioinformatics project analyzing biological data to identify genetic patterns using machine learning.", tags: ["Python", "Data Analysis", "ML"] },
-  { title: "NutriVision AI", desc: "Intelligent nutrition tracking app detecting nutrient gaps and early deficiency indicators.", tags: ["AI", "Mobile App", "Nutrition Intelligence"], link: "https://food-face-fix.lovable.app/" },
+  { title: "NutriVision AI", desc: "Intelligent nutrition tracking app detecting nutrient gaps and early deficiency indicators.", tags: ["AI", "Mobile App", "Nutrition Intelligence"], link: "https://nutri-vision-beryl.vercel.app" },
 ];
 
 const ProjectsSection = () => (

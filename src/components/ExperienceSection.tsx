@@ -11,14 +11,16 @@ const ExperienceSection = () => (
             Designed and developed a secure web portal for HR and employee workflow management, improving digital process efficiency.
           </p>
         </div>
-        <div className="section-card hover-glow">
-          <p className="text-accent text-sm font-mono mb-1">Upcoming Internship (2026)</p>
-          <h3 className="font-bold text-foreground text-lg">Upcoming Intern – NutriVision AI</h3>
-          <p className="text-muted-foreground text-sm mb-2">ICMR – National Institute of Nutrition (NIN)</p>
-          <p className="text-muted-foreground mt-2">
-            Selected for an upcoming research internship focused on AI-driven nutrition intelligence.
-          </p>
-        </div>
+<div className="section-card hover-glow">
+  <p className="text-accent text-sm font-mono mb-1">Internship (May 2026 – Present)</p>
+  <h3 className="font-bold text-foreground text-lg">AI Research Intern – NutriVision AI</h3>
+  <p className="text-muted-foreground text-sm mb-2">ICMR – National Institute of Nutrition (NIN)</p>
+  <p className="text-muted-foreground mt-2">
+    Developing NutriVision AI, an intelligent nutrition platform focused on food analysis,
+    nutrition monitoring, dietary assessment, and health tracking to support data-driven
+    wellness insights.
+  </p>
+</div>
       </div>
     </div>
   </section>
