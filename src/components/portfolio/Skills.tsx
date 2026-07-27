@@ -1,63 +1,102 @@
-import { SectionWrapper, SectionTitle } from "./SectionWrapper";
-import { Code, Globe, Smartphone, Wrench, Server, Users } from "lucide-react";
-import profile from "../assets/profile.jpg";
-const categories = [
+import { Code2, Globe, Smartphone, Wrench, Server, Users } from "lucide-react";
+
+const skillCategories = [
   {
+    icon: Code2,
     title: "Programming Languages",
-    icon: Code,
-    skills: ["C", "C++", "Java", "Python", "Dart"],
+    skills: ["C", "C++", "Java", "Python", "Dart", "JavaScript", "Swift"],
   },
   {
-    title: "Web Development",
     icon: Globe,
-    skills: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "REST APIs", "JSON"],
+    title: "Web Development",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Angular",
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "JSON",
+    ],
   },
   {
-    title: "App Dev & Databases",
     icon: Smartphone,
-    skills: ["Flutter", "Firebase", "Firestore", "MySQL", "MongoDB"],
+    title: "App Dev & Databases",
+    skills: [
+      "Flutter",
+      "SwiftUI",
+      "Firebase",
+      "Firestore",
+      "MySQL",
+      "MongoDB",
+    ],
   },
   {
-    title: "Frameworks & Tools",
     icon: Wrench,
-    skills: ["Spring Boot", "OpenCV", "Git", "GitHub", "Cursor", "Lovable", "Replit"],
+    title: "Frameworks & Tools",
+    skills: [
+      "Spring Boot",
+      "MERN Stack",
+      "OpenCV",
+      "Git",
+      "GitHub",
+      "Cursor",
+      "Replit",
+      "UI/UX",
+    ],
   },
   {
-    title: "DevOps & Backend",
     icon: Server,
-    skills: ["Flask", "API Development", "Deployment Concepts"],
+    title: "DevOps & Backend",
+    skills: [
+      "Flask",
+      "API Development",
+      "Deployment Concepts",
+    ],
   },
   {
-    title: "Soft Skills",
     icon: Users,
-    skills: ["Problem-Solving", "Teamwork", "Communication", "Adaptability", "Leadership", "Attention to Detail"],
+    title: "Soft Skills",
+    skills: [
+      "Problem-Solving",
+      "Teamwork",
+      "Communication",
+      "Adaptability",
+      "Leadership",
+      "Attention to Detail",
+    ],
   },
 ];
 
-const Skills = () => (
-  <SectionWrapper id="skills">
-    <SectionTitle>Skills</SectionTitle>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {categories.map((cat) => (
-        <div key={cat.title} className="glass-card hover-glow p-6">
-          <div className="flex items-center gap-3 mb-4">
-            <cat.icon className="text-primary" size={22} />
-            <h3 className="font-semibold text-foreground">{cat.title}</h3>
+const SkillsSection = () => (
+  <section id="skills" className="py-24 px-6">
+    <div className="max-w-6xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gradient mb-12">
+        Skills
+      </h2>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        {skillCategories.map((cat) => (
+          <div key={cat.title} className="section-card hover-glow">
+            <div className="flex items-center gap-3 mb-4">
+              <cat.icon className="w-5 h-5 text-accent" />
+              <h3 className="font-semibold text-foreground">{cat.title}</h3>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {cat.skills.map((s) => (
+                <span key={s} className="skill-tag">
+                  {s}
+                </span>
+              ))}
+            </div>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {cat.skills.map((s) => (
-              <span
-                key={s}
-                className="px-3 py-1 text-xs rounded-full bg-muted text-muted-foreground border border-border hover:border-primary hover:text-primary transition-colors"
-              >
-                {s}
-              </span>
-            ))}
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </SectionWrapper>
+  </section>
 );
 
-export default Skills;
+export default SkillsSection;
