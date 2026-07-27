@@ -2,15 +2,16 @@ import { SectionWrapper, SectionTitle } from "./SectionWrapper";
 import { Trophy } from "lucide-react";
 
 const achievements = [
+  "NutriVision AI advanced to Scientific Advisory Committee (SAC) review, with subsequent evaluation at ICMR Headquarters for potential real-world implementation.",
   "Qualified Internal SIH Round 2025 (SIH25128)",
-  "Internship at BHEL – Developed secure HR workflow portal",
-  "Top position – SecurityBoat Community Quiz",
+  "Top Position – SecurityBoat Community Quiz",
   "Interested in building impactful apps and solving real-world problems through technology",
 ];
 
 const Achievements = () => (
   <SectionWrapper id="achievements">
     <SectionTitle>Achievements</SectionTitle>
+
     <div className="glass-card hover-glow p-8 max-w-3xl mx-auto">
       <ul className="space-y-4">
         {achievements.map((a, i) => (
